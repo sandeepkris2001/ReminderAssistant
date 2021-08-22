@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free online meeting schedule remainder</title>
+    <link rel="shortcut icon" href="shortcut.ico">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Rampart+One&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    position: absolute;
+    overflow: hidden;
+    top: 5%;
+    padding-left: 5%;
+    font-weight:bold;
+    font-size: 260%;
+    color: white;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    z-index: 2;
+}
+.home{
+    position: relative;
+    margin-top: -5%;
+    background-image:url('homeCover.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 110vh;
+    background-position: center;
+}
+.homecontent{
+    padding-top: 20%;
+}
+#home h1{
+
+    text-align: center;
+    font-size: 250%;
+    color: white;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";    
+    z-index: 2;
+}
+#home h3{
+    position: relative;
+    text-align: center;
+    font-size: 250%;
+    color: white;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";    
+    padding-bottom: 3%;
+}
+#home a{
+    position: relative;
+    left: 35%;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    letter-spacing: 1px;
+    font-weight: bold;
+    width: 60%;
+    padding: 0.8%;
+    border-radius: .5rem;
+    padding: .8% 3%;
+    
+}
+#home .login{
+    margin-right: 5%;
+}
+#home a:hover{
+    color: black;
+    background-color: aqua;
+    box-shadow: 0 0 10px aqua,0 0 40px aqua,0 0 10px aqua,0 0 80px aqua;
+    border: 0px;
+    transition: all 0.1s ease;
+
+}
+.navigation{
+    position: fixed;
+    top: 20%;
+    background-color: black;
+    width: 45px;
+    height: 59%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.navigation ul{
+    list-style: none;
+    margin-top: 7px;
+}
+.navigation ul li{
+
+    height: 80px;
+}
+.navigation ul li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+.navigation ul li a i{
+    color: rgb(153, 201, 201);
+    font-size: 210%;
+    padding-right: 5px;
+}
+.navigation ul li .innertext{
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
+    color: aqua;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 3.5%;
+    margin-top: -28px;
+    opacity: 0;
+    pointer-events: none;
+    font-size: larger;
+}
+.navigation ul li:hover i{
+    color: aqua;
+    text-shadow:0 0 10px aqua,0 0 40px aqua,0 0 10px aqua,0 0 80px aqua;
+}
+.navigation ul li:hover .innertext{
+    opacity: 1;
+    transition: all 0.5s ease;
+    font-weight: bolder;
+}
+.navigation ul li .active i{
+    color: aqua;
+    bottom: 0;
+    border-bottom:4px solid aqua;
+    width: 80%;
+    display: inline-block;
+    transition: all 0.3s ease;
+    
+}
+.pages section{
+    height: 100vh;   
+}
+.home2{
+    height: 100vh;
+}
+.home2{
+    background-color: black;
+    color:white;
+    padding-top:25vh;
+}
+.home2 p{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 250%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4%;
+}
+.home2 small{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 160%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2.5%;
+}
+.home2 a{
+    position: relative;
+    left: 28%;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    letter-spacing: 1px;
+    font-weight: bold;
+    width: 60%;
+    padding: 0.8%;
+    border-radius: .5rem;
+    padding: .8% 3%;
+}
+.home2 .login{
+    margin-right: 3%;
+}
+.home2 a:hover{
+    color: black;
+    background-color: aqua;
+    box-shadow: 0 0 10px aqua,0 0 40px aqua,0 0 10px aqua,0 0 80px aqua;
+    border: 0px;
+    transition: all 0.1s ease;
+}
+.home2 .align{
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 140%;
+    font-weight: bold;
+    float: right;
+    position: relative;
+    right: 35%;
+    
+}
+	</style>
+    <!--<section>
+        <div class="homeimg"></div>
+    </section>-->
+    <div class="logo">
+        <span>RemindMe</span>
+    </div>
+    <div class="pages">
+        <div id="home" class="home">
+            <div class="homecontent">
+                <h1>Feeling sad for missing meetings</h1>
+                <h3>RemindMe helps!</h3>
+                <a href="#login" class="login">LOGIN</a>
+                <a href="#signup" class="signup">SIGN UP</a>
+            </div>
+        </div>
+        
+        <section class="home2">
+                <p>Want to get reminder about your meetings</p>
+                <small>Get a reminder message before your specified time!</small>
+                <a href="#login" class="login">LOGIN</a>
+                <a href="#signup" class="signup">SIGN UP</a>
+                <span class="align">to get started.</span>
+        </section>
+        <section id="about"></section>
+    </div>
+
+    <div class="navigation">
+        <ul id="nav-bar">
+            <li>
+                <a href="#home" class="btn active">
+                    <i class="bi-house-door"></i>
+                </a>
+                <span class="innertext">HOME</span>
+            </li>
+            <li>
+                <a href="#about" class="btn">
+                    <i class="bi-info-circle"></i>
+                </a>
+                <span class="innertext">ABOUT</span>
+            </li>
+            <li>
+                <a href="#contactus" class="btn">
+                    <i class="bi bi-telephone"></i>                   
+                </a>
+                <span class="innertext">CONTACT US</span>
+            </li>
+            <li>
+                <a href="#developers" class="btn">
+                    <i class="bi bi-code-slash"></i>
+                </a>
+                <span class="innertext">DEVELOPERS</span>
+            </li>
+            <li>
+                <a href="#others" class="btn">
+                    <i class="bi-info-circle"></i>
+                </a>
+                <span class="innertext">OTHERS</span>
+            </li>
+        </ul>
+    </div>
+
+    
+
+
+    <script>
+	var btncontainer=document.getElementById("nav-bar");
+var btn=btncontainer.getElementsByClassName("btn");
+for(var i=0;i<btn.length;i++){
+    btn[i].addEventListener('click',function(){
+        var current=document.getElementsByClassName("active");
+        current[0].className=current[0].className.replace(" active");
+        this.className+= " active";
+    });
+}
+
+	</script>
+</body>
+</html>
