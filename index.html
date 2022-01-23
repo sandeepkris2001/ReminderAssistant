@@ -64,7 +64,7 @@ html{
     left: 35%;
     padding: 10px;
     text-decoration: none;
-    border: 1px solid white;
+    border: 2px solid aqua;
     color: white;
     font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     letter-spacing: 1px;
@@ -148,15 +148,23 @@ html{
     
 }
 .pages section{
-    height: 100vh;   
+    height: 115vh;   
 }
 .home2{
     height: 100vh;
 }
+.homeimg2{
+    background-image: url('homeCover2.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60%;
+    position: relative;
+    opacity: .9;
+}
 .home2{
     background-color: black;
     color:white;
-    padding-top:25vh;
+    transition: 0.5s;
 }
 .home2 p{
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -164,7 +172,7 @@ html{
     font-weight: bold;
     display: flex;
     justify-content: center;
-    padding-bottom: 4%;
+    padding-bottom: 2%;
 }
 .home2 small{
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -179,7 +187,7 @@ html{
     left: 28%;
     padding: 10px;
     text-decoration: none;
-    border: 1px solid white;
+    border: 2px solid aqua;
     color: white;
     font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     letter-spacing: 1px;
@@ -206,7 +214,268 @@ html{
     float: right;
     position: relative;
     right: 35%;
-    
+}
+.horizontal #login{
+    background: linear-gradient(120deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+}
+
+.loginform{
+    position: relative;
+    top: 16%;
+    /*background-color: rgba(var(--d87,255,255,255),1);*/
+    background-color: whitesmoke;
+    border-radius: 20px;
+    color: black;
+    height: 62%;
+    width: 34%;
+    margin-left: 28%;
+    font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.loginform .close{
+    float: right;
+    width: 8%;
+    margin-top: -17%;
+    text-decoration: none;
+    color: aqua;
+    font-weight: 200%;
+    font-size: larger;
+}
+.loginform h1{
+    text-align: center;
+    padding: 5% 0 8% 0;
+    font-size: 180%;
+}
+
+.logincontents{
+    padding: 2%;
+    padding-left: 15%;
+    position: relative;
+    padding-bottom: 30px;
+}
+.logincontents label{
+    font-size: large;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 2%;
+    font-size: 110%;
+}
+.logincontents input{
+    display: block;
+    width: 85%;
+    padding: 1.5%;
+    border: 3px solid aqua;
+    font-size: 100%;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*success and error message for validation*/
+.logincontents.success input{
+    border: 3px solid rgb(29, 199, 29);
+}
+.logincontents.error input{
+    border: 3px solid red;
+}
+.logincontents.success i.bi-check-circle-fill{
+    color: rgb(29, 199, 29);
+    visibility: visible;
+} 
+.logincontents.error i.bi-exclamation-circle-fill{
+    color: red;
+    visibility: visible;
+} 
+.logincontents.error small{
+    color: red;
+    visibility: visible;
+}   
+.logincontents i{
+    position: absolute;
+    top: 50px;
+    left:80%;
+    font-size: 105%;
+    visibility: hidden;
+}
+.logincontents small{
+    font-weight:bold;
+    font-size: 100%;
+    position: absolute;
+    visibility: hidden; 
+}
+.logincontents button{
+    width: 70%;
+    display: block;
+    margin-left: 7%;
+    padding: 2%;
+    color:black;
+    /*background-color: rgb(243, 52, 141);*/
+    background-color: aqua;
+    border: 2px solid aqua;
+    border-radius: 5px;
+    font-size: 100%;
+    font-weight:bold;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    cursor: pointer;
+}
+.logincontents input:hover{
+    letter-spacing: 0.5px;
+}
+.logincontents button:hover{
+    letter-spacing: 1.5px;
+}
+.pages .horizontal #signup{
+    height: 120vh;   
+}
+.horizontal #signup{
+    /*background-color: rgb(24, 16, 16);*/
+    background: linear-gradient(120deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+}
+.signupform{
+    position: relative;
+    top: 3%;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    color: black;
+    height: 94%;
+    width: 35%;
+    margin-left: 28%;
+    font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.signupform .close{
+    float: right;
+    width: 8%;
+    margin-top: -12%;
+    text-decoration: none;
+    color: aqua;
+    font-weight: 200%;
+    font-size: larger;
+}
+.signupform h1{
+    text-align: center;
+    padding: 6% 0 3% 0;
+    font-size: 170%;
+}
+.signupcontents{
+    padding: 2%;
+    padding-left: 15%;
+    position: relative;
+    padding-bottom: 20px;
+}
+.signupcontents label{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 1%;
+    font-size: 110%;
+}
+.signupcontents input{
+    display: block;
+    width: 83%;
+    padding: 0.5%;
+    border: 2px solid aqua;
+    font-size: 90%;
+    border-radius: 3px;
+    background-color: whitesmoke;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.signupcontents i{
+    position: absolute;
+    top: 40px;
+    left:79%;
+    visibility: hidden;
+}
+.signupcontents small{
+    font-weight:bold;
+    font-size: 95%;
+    position: absolute;
+    visibility: hidden;
+}
+.signupcontents #num{
+    display: block;
+    width : 8%;
+    opacity: .8;
+}
+.signupcontents #number{
+    position: relative;
+    left: 10%;
+    width: 72%;
+    margin-top: -7%;
+}
+.signupcontents #phonesmall{
+    opacity: .8;
+    visibility: visible;
+}
+.signupcontents #country{
+    width: 40%;
+    padding: 4px;
+    color: black;
+    font-weight:700;
+    background-color: white;
+    border: 2px solid aqua;
+}
+.signupcontents #countrysmall{
+    display: block;
+    opacity: .8;
+    visibility: visible;
+}
+.signupradio {
+    padding: 2%;
+    padding-left: 15%;
+    position: relative;
+    padding-bottom: 20px;
+}
+.signupradio label{
+    font-size: 110%;
+    font-weight: bold;
+    padding-right: 3%;
+}
+.signupradio span{
+    font-weight: bold;
+    pointer-events: none;
+    padding-right: 5%;
+}
+.signupradio input{
+    cursor: pointer;
+    width: 4%;
+}
+.signupradio small{
+    font-weight:bold;
+    font-size: 95%;
+    display: flex;
+    position: absolute;
+    visibility: hidden;
+}
+.signupcontents #submit{
+    width: 70%;
+    display: block;
+    margin-left: 7%;
+    padding: 1.5%;
+    color:black;
+    /*background-color: rgb(243, 52, 141);*/
+    background-color: aqua;
+    border: 2px solid aqua;
+    border-radius: 5px;
+    font-size: 110%;
+    font-weight:bold;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    cursor: pointer;
+}
+.signupcontents #submit input:hover{
+    letter-spacing: 3px;
+}
+.signupcontents input:hover{
+    letter-spacing: 0.5px;
+}
+.horizontal #about{
+    background-color: aqua;
+}
+.horizontal #contactus{
+    background-color: yellow;
+}
+.horizontal #developers{
+    background-color: chocolate;
+}
+.horizontal #others{
+    background-color: violet;
 }
 	</style>
     <!--<section>
@@ -220,19 +489,119 @@ html{
             <div class="homecontent">
                 <h1>Feeling sad for missing meetings</h1>
                 <h3>RemindMe helps!</h3>
-                <a href="#login" class="login">LOGIN</a>
-                <a href="#signup" class="signup">SIGN UP</a>
+                <a href="#login" class="login" onclick="loginClick()">LOGIN</a>
+                <a href="#signup" class="signup" onclick="signupClick()">SIGN UP</a>
             </div>
         </div>
-        
         <section class="home2">
+                <div class="homeimg2"></div>
                 <p>Want to get reminder about your meetings</p>
                 <small>Get a reminder message before your specified time!</small>
-                <a href="#login" class="login">LOGIN</a>
-                <a href="#signup" class="signup">SIGN UP</a>
+                <a href="#login" class="login" onclick="loginClick()">LOGIN</a>
+                <a href="#signup" class="signup" onclick="signupClick()">SIGN UP</a>
                 <span class="align">to get started.</span>
         </section>
-        <section id="about"></section>
+        <div class="horizontal">
+            <section id="login">
+                <div class="loginform">
+                    <form id="form" action="">
+                        <div class="loginhead">
+                            <h1>Hello again! login</h1>
+                        </div>
+                        <a href="#home" class="close" onclick="closeClick()"><i class="bi-x-lg"></i></a>
+                        <div class="logincontents success">
+                            <label>Username/E-mail id</label>
+                            <input type="email" placeholder="Enter your email id" id="loginusername">
+                            <i class="bi-check-circle-fill"></i>
+                            <i class="bi-exclamation-circle-fill"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="logincontents error">
+                            <label>Password</label>
+                            <input type="password" placeholder="Enter your password" id="loginpassword">
+                            <i class="bi-check-circle-fill"></i>
+                            <i class="bi-exclamation-circle-fill"></i>
+                            <small id="space">Error message</small>
+                        </div>
+                        <br>
+                        <div class="logincontents">
+                            <button id="loginsubmit">LOGIN</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section id="signup">
+                <div class="signupform">
+                    <form action="#signup">
+                        <div class="signuphead">
+                            <h1>Hello user! Sign up</h1>
+                        </div>
+                        <a href="#home" class="close" onclick="closeClick()"><i class="bi-x-lg"></i></a>
+                        <div class="signupcontents">
+                            <label>Name</label>
+                            <input type="text" placeholder="Enter your name" name="name" id="userName">
+                            <i class="bi-check-circle-fill"></i>
+                            <i class="bi-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="signupcontents">
+                            <label>Email ID </label>
+                            <input type="email" placeholder="Enter your email id" name="email" id="emailId">
+                            <i class="bi-check-circle-fill"></i>
+                            <i class="bi-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="signupcontents">
+                            <label>Phone Number </label>
+                            <input type="text" placeholder="+91" disabled id="num">
+                            <input type="tel" placeholder="Enter your mobile number" maxlength="10" id="number">
+                            <i class="bi-check-circle-fill"></i>
+                            <i class="bi-exclamation-circle"></i>
+                            <small id="phonesmall">*soon other countries will be included</small>
+                        </div>
+                        <div class="signupcontents">
+                            <label>Country </label>
+                            <select name="Country" disabled id="country">
+                                <option>India</option>
+                            </select>
+                            <small id="countrysmall">*soon other countries will be included</small>
+                        </div>
+                        <div class="signupradio">
+                            <label>Gender</label>
+                                    <input type="radio" name="gender" class="g" id="m">
+                                    <span id="m">Male</span>
+                                    <input type="radio" name="gender" class="g" id="f">
+                                    <span id="f">Female</span>
+                                    <input type="radio" name="gender" class="g" id="o">
+                                    <span id="o">Others</span>
+                            <small id="gendersmall">Error message</small>
+                        </div>
+                        <div class="signupcontents">
+                            <label>Password </label>
+                            <input type="password" placeholder="Enter your password" id="password">
+                            <i class="bi-check-circle-fill"></i>
+                            <i class="bi-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <div class="signupcontents">
+                            <label>Confirm password</label>
+                            <input type="password" placeholder="Enter your password again" id="confirmPassword">
+                            <i class="bi-check-circle-fill"></i>
+                            <i class="bi-exclamation-circle"></i>
+                            <small>Error message</small>
+                        </div>
+                        <br>
+                        <div class="signupcontents" id=submitbtn>
+                            <input type="submit" id="signupsubmit">
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section id="about"></section>
+            <section id="contactus"></section>
+            <section id="developers"></section>
+            <section id="others"></section>
+        </div>
     </div>
 
     <div class="navigation">
@@ -244,25 +613,25 @@ html{
                 <span class="innertext">HOME</span>
             </li>
             <li>
-                <a href="#about" class="btn">
+                <a href="#about" class="btn" onclick="aboutClick()">
                     <i class="bi-info-circle"></i>
                 </a>
                 <span class="innertext">ABOUT</span>
             </li>
             <li>
-                <a href="#contactus" class="btn">
+                <a href="#contactus" class="btn" onclick="contactusClick()">
                     <i class="bi bi-telephone"></i>                   
                 </a>
                 <span class="innertext">CONTACT US</span>
             </li>
             <li>
-                <a href="#developers" class="btn">
+                <a href="#developers" class="btn" onclick="developersClick()">
                     <i class="bi bi-code-slash"></i>
                 </a>
                 <span class="innertext">DEVELOPERS</span>
             </li>
             <li>
-                <a href="#others" class="btn">
+                <a href="#others" class="btn" onclick="othersClick()">
                     <i class="bi-info-circle"></i>
                 </a>
                 <span class="innertext">OTHERS</span>
@@ -274,7 +643,8 @@ html{
 
 
     <script>
-	var btncontainer=document.getElementById("nav-bar");
+	//current working navigation
+var btncontainer=document.getElementById("nav-bar");
 var btn=btncontainer.getElementsByClassName("btn");
 for(var i=0;i<btn.length;i++){
     btn[i].addEventListener('click',function(){
@@ -283,6 +653,54 @@ for(var i=0;i<btn.length;i++){
         this.className+= " active";
     });
 }
+//hiding the sections and onclick()-display
+/*const loginbtn=document.getElementById("login");
+loginbtn.style.display="none";
+function loginClick(){
+    loginbtn.style.display="inherit";
+}
+const signupbtn=document.getElementById("signup");
+signupbtn.style.display="none";
+function signupClick(){
+    signupbtn.style.display="inherit";
+}
+function closeClick(){
+    loginbtn.style.display="none";
+    signupbtn.style.display="none";
+}*/
+//hiding navigation contents
+const about = document.getElementById("about");
+about.style.display="none";
+function aboutClick(){
+    about.style.display="inherit";
+}
+const contactus = document.getElementById("contactus");
+contactus.style.display="none";
+function contactusClick(){
+    contactus.style.display="inherit";
+}
+const developers = document.getElementById("developers");
+developers.style.display="none";
+function developersClick(){
+    developers.style.display="inherit";
+}
+const others = document.getElementById("others");
+others.style.display="none";
+function othersClick(){
+    others.style.display="inherit";
+}
+
+
+/*form validation*/
+const form = document.getElementsById('form');
+const loginusername = document.getElementsByClassName('loginusername');
+const loginpassword = document.getElementsByClassName('loginpassword');
+const loginsubmit = document.getElementById('loginsubmit');
+loginsubmit.addEventListener('click',(e) =>{
+    e.preventDefault();
+});
+
+
 
 	</script>
 </body>
